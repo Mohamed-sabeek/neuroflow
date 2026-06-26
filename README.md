@@ -1,34 +1,55 @@
 # NeuroFlow AI ── Data Automation Platform
 
 <p align="left">
-  <img src="https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React Badge" />
+  <img src="https://img.shields.io/badge/React-19.2.7-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React Badge" />
   <img src="https://img.shields.io/badge/Vite-8.1.0-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite Badge" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.4.19-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS Badge" />
   <img src="https://img.shields.io/badge/Build-Passing-4CAF50?style=flat-square" alt="Build Status Badge" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License Badge" />
 </p>
 
 NeuroFlow AI is a high-performance, responsive enterprise SaaS landing page demonstrating a next-generation autonomous AI data orchestration engine. Built specifically for frontend engineering evaluation, this repository implements professional visual depth, fluid micro-interactions, and strict performance limits.
 
 ---
 
+## 🌐 Live Demo
+
+**Website:** [https://neuroflow-ai.vercel.app](https://neuroflow-ai.vercel.app)
+
+## 📸 Preview
+
+![NeuroFlow AI](./preview.png)
+
+---
+
+## ✨ Highlights
+
+* **Responsive Design**: Fluid layout matching all screen viewports natively.
+* **Zero Parent Re-renders**: Direct DOM ref binding isolates price state switches.
+* **CSS-only Animations**: Hardware-accelerated transitions run on compositor threads.
+* **Dynamic Pricing Matrix**: Calculated programmatically via multi-dimensional currency tables.
+* **Bento → Accordion**: Viewport responsive flow with context-locked active indexes.
+* **Lighthouse Optimized**: Minimal scripts and semantic components for fast TTI/FCP scores.
+
+---
+
 ## 💎 Core Features
 
 * **Dynamic Pricing Engine**: A multi-dimensional pricing matrix supporting USD (`$`), EUR (`€`), and INR (`₹`) currencies alongside billing frequency selection.
-* **Performance-Isolated DOM Binding**: An isolated price-binding architecture that performs targeted text node updates directly in the DOM, guaranteeing zero React component render loops when changing billing rates.
+* **Performance-Isolated DOM Binding**: Designed to minimize unnecessary React component updates by isolating pricing-related DOM updates.
 * **Bento Grid Layout**: A clean, balanced structural display showcasing system features with Top-Border highlights and interactive hardware-simulation panels.
 * **Accordion Transformation**: Automatically refactors the Bento grid layout on mobile screens into collapsible nodes with clean CSS transitions and state persistence.
 * **AI Execution Canvas**: A live SVG layout tracing connections from stream sources through the core orchestrator node to dispatch channels with continuous CSS dash-flow packet movements.
 * **Telemetry Observation Console**: Real-time cluster observability feeds displaying transaction loads, status indicators, and logging feeds.
-* **Responsive Architecture**: Pixel-perfect viewports scaling smoothly across mobile (`320px`), tablet (`768px`), desktop (`1280px`), and ultra-wide screens (`1920px`) with zero overflows.
+* **Responsive Architecture**: Designed for responsive layouts across mobile (`320px`), tablet (`768px`), desktop (`1280px`), and ultra-wide screens (`1920px`).
+* **CSS-only Motion System**: Micro-interactions run on CSS-transitions for hover animations, layout drawer toggles, and vector packet loops.
 
 ---
 
 ## 🛠 Technology Stack
 
-* **React (v19)**: Component-driven interface building.
-* **Vite (v8)**: Fast bundling and local dev server setup.
-* **Tailwind CSS (v3)**: Utility-first, low-overhead design.
+* **React (v19.2.7)**: Component-driven interface building.
+* **Vite (v8.1.0)**: Fast bundling and local dev server setup.
+* **Tailwind CSS (v3.4.19)**: Utility-first, low-overhead design.
 * **JavaScript (ES6+)**: Custom store bindings and DOM manipulation.
 * **CSS Keyframes**: Performant, hardware-composited animations.
 * **SVG**: Crisp icons and network vector graphics.
@@ -129,8 +150,10 @@ npm run lint
 
 ## ♿ Accessibility (A11y) & SEO
 
-* **Semantic Hierarchy**: Structured HTML layout utilizing single `<h1>` headers, `<header>`, `<main>`, `<section>`, and `<footer>` containers.
-* **Aria Attributes**: All interactive collapsible elements include programmatically assigned `aria-expanded` and `aria-controls` properties.
+* **Semantic HTML**: Structured layout utilizing HTML5 tags such as `<header>`, `<main>`, `<section>`, and `<footer>`.
+* **Aria Attributes**: All interactive collapsible elements include programmatically assigned `aria-expanded` and `aria-controls` properties to guarantee compatibility.
+* **Keyboard Navigation**: Fully interactive elements can be focused and triggered via standard tab keys.
+* **Screen Reader Support**: Assistive devices read precise text descriptions from semantic tags and image elements.
 * **Focus States**: Navigation items, custom inputs, and button structures feature visible focus rings to support assistive technologies.
 * **Search Engine Optimizations**: Full meta tags, Twitter cards, Open Graph tags, robots config files, and viewport optimizations are configured in `index.html`.
 
@@ -138,20 +161,22 @@ npm run lint
 
 ## 🔮 Future Roadmap
 
-* **Theme Customization**: Dark/Light mode color switching.
 * **Authentication Modules**: Integrate mock login sessions.
 * **Real-time API Bindings**: Hook up telemetry dials to live WebSockets.
-* **Internationalization**: Support multi-language routing tags.
 * **PWA Capability**: Support offline caching profiles.
+* **Internationalization**: Support multi-language routing tags.
+* **Theme Customization**: Dark/Light mode color switching.
 
 ---
 
 ## 📄 License
 
-This project is created for evaluation purposes. Add an appropriate license declaration before utilizing or deploying for open-source distribution.
+This repository was created for the Frontend Battle Phase 1 competition. A formal open-source license has not been assigned.
 
 ---
 
-## 👥 Authors
+## 👤 Author
 
-Built with care for the **Frontend Battle Phase 1** competition.
+**Mohamed Sabeek**
+
+Built for the Frontend Battle Phase 1 competition.

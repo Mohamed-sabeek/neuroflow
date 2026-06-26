@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #172B36; /* Oceanic Noir */
+    color: #F1F6F4; /* Arctic Powder */
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Custom selection color */
+  ::selection {
+    background-color: #FFC801; /* Forsythia */
+    color: #172B36; /* Oceanic Noir */
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #172B36;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #114C5A; /* Nocturnal Expedition */
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D9E8E2; /* Mystic Mint */
+  }
+}
+
+/* Premium Noise Overlay for tactile texture */
+.noise-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.015;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Premium Animated Grid Background */
+.bg-grid-pattern {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(217, 232, 226, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 232, 226, 0.03) 1px, transparent 1px);
+}
+
+.gradient-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(17, 76, 90, 0.5) 0%, transparent 70%);
+}
+
+.saffron-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 153, 50, 0.12) 0%, transparent 60%);
+}
+
+.mint-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(217, 232, 226, 0.12) 0%, transparent 65%);
+}
+
+.forsythia-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 200, 1, 0.1) 0%, transparent 60%);
+}
+
+/* Thin border, premium card with subtle lift and custom drop shadow */
+.premium-card {
+  background: rgba(17, 76, 90, 0.15); /* Nocturnal Expedition low opacity */
+  border: 1px solid rgba(217, 232, 226, 0.08); /* Mystic Mint border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  border-color: rgba(255, 200, 1, 0.25); /* Forsythia highlight */
+  background: rgba(17, 76, 90, 0.22);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 20px rgba(255, 200, 1, 0.03);
+}
+
+/* Custom connection lines for workflow nodes */
+.workflow-line-horizontal {
+  background: linear-gradient(90deg, transparent, #FFC801, #FF9932, transparent);
+  background-size: 200% 100%;
+  animation: flowLine 4s linear infinite;
+}
+
+.workflow-line-vertical {
+  background: linear-gradient(180deg, transparent, #FFC801, #FF9932, transparent);
+  background-size: 100% 200%;
+  animation: flowLineVertical 4s linear infinite;
+}
+
+/* Premium Animations */
+@keyframes flowLine {
+  0% { background-position: 100% 0%; }
+  100% { background-position: -100% 0%; }
+}
+
+@keyframes flowLineVertical {
+  0% { background-position: 0% 100%; }
+  100% { background-position: 0% -100%; }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 8, 4;
+  animation: dash 2s linear infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Custom connection gradient mapping */
+.workflow-connection-line {
+  stroke-dasharray: 6, 6;
+  animation: dash 3s linear infinite;
+}

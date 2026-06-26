@@ -59,7 +59,7 @@ export const Navbar = () => {
       >
         {/* Brand Logo in JetBrains Mono with status dot and blinking cursor */}
         <a href="#" className="flex items-center gap-2 group transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_#10B981] animate-pulse"></span>
+          <span className="h-1.5 w-1.5 rounded-full bg-[#FFC801] shadow-[0_0_10px_rgba(255,200,1,0.5)] animate-pulse"></span>
           <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#F1F6F4]">
             <span className="text-[#FFC801]">&lt;</span>
             NEUROFLOW

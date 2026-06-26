@@ -218,10 +218,10 @@ export const Workflow = () => {
                   <div className="mt-4 border-t border-[#D9E8E2]/8 pt-3 relative z-10">
                     <div className="flex items-center justify-between text-[9px] font-mono text-[#D9E8E2]/60">
                       <div className="flex items-center gap-1.5">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-heartbeat"></span>
-                        <span className="text-emerald-400 font-bold uppercase tracking-wider">PROCESSING</span>
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#FFC801] animate-heartbeat"></span>
+                        <span className="text-[#FFC801] font-bold uppercase tracking-wider">PROCESSING</span>
                       </div>
-                      <span className="bg-[#114C5A]/50 px-2 py-0.5 rounded border border-[#D9E8E2]/10 text-emerald-400 font-bold">ONLINE</span>
+                      <span className="bg-[#114C5A]/50 px-2 py-0.5 rounded border border-[#D9E8E2]/10 text-[#FF9932] font-bold">ONLINE</span>
                     </div>
 
                     {/* Operational telemetry rows */}
@@ -244,7 +244,7 @@ export const Workflow = () => {
                 ) : (
                   <div className="mt-3 border-t border-[#D9E8E2]/6 pt-2 flex items-center justify-between text-[8px] font-mono text-[#D9E8E2]/40">
                     <div className="flex items-center gap-1">
-                      <span className="h-1 w-1 rounded-full bg-emerald-400 animate-ping"></span>
+                      <span className="h-1 w-1 rounded-full bg-[#FFC801] animate-ping"></span>
                       <span>{node.status}</span>
                     </div>
                     <span className="text-[#FFC801] font-bold">{node.metric}</span>
@@ -296,15 +296,15 @@ export const Workflow = () => {
               <div className="flex flex-col gap-3">
                 <div className="flex items-center justify-between rounded-xl border border-[#D9E8E2]/10 bg-[#172B36] p-4 font-mono text-xs shadow-sm">
                   <span className="text-[#D9E8E2] font-bold">CRM Sync</span>
-                  <span className="text-emerald-400 font-bold">Active</span>
+                  <span className="text-[#FFC801] font-bold">Active</span>
                 </div>
                 <div className="flex items-center justify-between rounded-xl border border-[#D9E8E2]/10 bg-[#172B36] p-4 font-mono text-xs shadow-sm">
                   <span className="text-[#D9E8E2] font-bold">Slack Alert</span>
-                  <span className="text-emerald-400 font-bold">Active</span>
+                  <span className="text-[#FFC801] font-bold">Active</span>
                 </div>
                 <div className="flex items-center justify-between rounded-xl border border-[#D9E8E2]/10 bg-[#172B36] p-4 font-mono text-xs shadow-sm">
                   <span className="text-[#D9E8E2] font-bold">Reports Dispatch</span>
-                  <span className="text-emerald-400 font-bold">Active</span>
+                  <span className="text-[#FFC801] font-bold">Active</span>
                 </div>
               </div>
             </div>

@@ -68,8 +68,8 @@ export const Testimonials = () => {
                 </p>
 
                 {/* Verification badge */}
-                <div className="mt-4 flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-bold uppercase tracking-wider">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-heartbeat"></span>
+                <div className="mt-4 flex items-center gap-1.5 text-[9px] font-mono text-[#D9E8E2]/85 font-bold uppercase tracking-wider">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#FFC801] animate-heartbeat"></span>
                   {index === 2 ? "✔ Verified Enterprise Customer" : "✔ Verified Production Deployment"}
                 </div>
               </div>
@@ -86,7 +86,7 @@ export const Testimonials = () => {
                 <div className="flex items-center gap-4">
                   {/* Initials Avatar in Forsythia with Online Heartbeat LED */}
                   <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFC801] font-mono text-xs font-black text-[#172B36] shadow-[0_0_15px_rgba(255,200,1,0.2)] group-hover:shadow-[0_0_20px_rgba(255,200,1,0.4)] transition-all duration-200">
-                    <span className="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-emerald-500 border-2 border-[#172B36] animate-pulse"></span>
+                    <span className="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-[#FFC801] border-2 border-[#172B36] animate-pulse"></span>
                     {t.initials}
                   </div>
 

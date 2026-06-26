@@ -138,8 +138,8 @@ export const Dashboard = () => {
           <div className="flex flex-col gap-4 border-b border-[#D9E8E2]/10 bg-[#114C5A]/15 px-6 py-4.5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3">
               <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFC801] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FFC801]"></span>
               </span>
               <span className="font-mono text-[10px] uppercase tracking-widest text-[#F1F6F4] font-bold">
                 CLUSTER_STATUS: <span className="text-[#FFC801]">STABLE_HEALTH</span>

@@ -207,7 +207,7 @@ export const Footer = () => {
               key={i} 
               className="inline-flex items-center gap-1.5 rounded-full bg-[#114C5A]/20 border border-[#D9E8E2]/6 px-3.5 py-1.5 font-mono text-[8px] font-bold text-[#D9E8E2]/70 uppercase tracking-widest"
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-[#D9E8E2] animate-pulse"></span>
               {pill}
             </span>
           ))}
@@ -224,8 +224,8 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-4 font-mono text-[9px]">
-            <div className="flex items-center gap-1.5 text-emerald-400 font-bold uppercase">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-heartbeat"></span>
+            <div className="flex items-center gap-1.5 text-[#D9E8E2]/85 font-bold uppercase">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#FFC801] animate-heartbeat"></span>
               ONLINE
             </div>
             <span className="text-[#D9E8E2]/20">|</span>

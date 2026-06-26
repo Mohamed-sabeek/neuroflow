@@ -50,11 +50,12 @@ export const Testimonials = () => {
               className="group flex flex-col justify-between rounded-2xl border border-[#D9E8E2]/8 bg-gradient-to-br from-[#114C5A]/5 to-[#172B36]/90 p-8 transition-all duration-200 ease-out hover:border-[#FFC801]/30 hover:translate-y-[-8px] hover:shadow-[0_20px_45px_rgba(0,0,0,0.45)] relative overflow-hidden"
             >
               {/* Giant decorative SVG quote in background */}
-              <div className="absolute right-6 top-6 text-[#D9E8E2]/2 pointer-events-none group-hover:text-[#D9E8E2]/4 transition-colors duration-200">
+              <div className="absolute right-6 top-6 text-[#D9E8E2] opacity-[0.03] group-hover:opacity-[0.06] pointer-events-none z-0 transition-opacity duration-200">
                 <svg className="h-20 w-20" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
+
 
               <div>
                 {/* 5-Star Rating */}

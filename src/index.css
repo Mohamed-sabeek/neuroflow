@@ -278,4 +278,22 @@
   animation: scan-line 4s linear infinite;
 }
 
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes shine {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animate-shine {
+  animation: shine 1.6s ease-in-out infinite;
+}
+
+
 

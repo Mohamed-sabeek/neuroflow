@@ -258,3 +258,24 @@
   animation: dash-flow 1s linear infinite;
 }
 
+@keyframes scan-line {
+  0% {
+    transform: translateX(0);
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(600px);
+    opacity: 0.05;
+  }
+}
+.animate-scan-line {
+  animation: scan-line 4s linear infinite;
+}
+
+
